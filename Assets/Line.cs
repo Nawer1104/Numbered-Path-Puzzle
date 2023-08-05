@@ -8,28 +8,10 @@ public class Line : MonoBehaviour
     void Start()
     {
             transform.GetChild(0).gameObject.SetActive(false);
-
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnMouseEnter()
     {
-        
-    }
-
-    private void OnMouseDown()
-    {
-        if (transform.GetChild(0).gameObject.activeSelf)
-        {
-            transform.GetChild(0).gameObject.SetActive(false);
-            
-
-        }
-        else
-        {
-
-            transform.GetChild(0).gameObject.SetActive(true);
-
-        }
+        transform.GetChild(0).gameObject.SetActive(true);
     }
 }
